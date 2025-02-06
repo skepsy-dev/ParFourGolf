@@ -1,5 +1,50 @@
 
+// Contact form submit action
+document.getElementById("contactForm").addEventListener("submit", async function(event) {
+  event.preventDefault(); // Prevent default form submission
 
+  const submitButton = this.querySelector("button[type=submit]");
+  submitButton.disabled = true; // Disable button to prevent multiple submissions
+
+   // Show success message immediately
+   document.getElementById("successMessage").style.display = "block";
+   document.getElementById("successMessage").innerText = "Sending..."; // Show loading message
+
+  const formData = new FormData(this);
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/d189b8e93c74aa52ac9366b056de6a12", {
+      method: "POST",
+      body: formData
+    });
+
+    if (response.ok) {
+      document.getElementById("successMessage").innerText = "Message sent successfully!";
+      this.reset(); // Clear form fields
+    } else {
+      document.getElementById("successMessage").innerText = "Error sending message. Please try again.";
+    }
+    } catch (error) {
+      document.getElementById("successMessage").innerText = "Network error. Please check your connection.";
+    }
+
+  setTimeout(() => {
+  document.getElementById("successMessage").style.display = "none"; // Hide after 5 seconds
+  }, 5000);
+
+  submitButton.disabled = false; // Re-enable button after submission
+});
+
+// Investor Deck Download
+function downloadInvestorDeck() {
+    const password = prompt("Enter password to download the file:");
+    
+    if (password === "16118") { // Change this password as needed
+        window.location.href = "files/250205_InvestorDeck_Par4.pdf"; // File path
+    } else {
+        alert("Incorrect password. Access denied!");
+    }
+}
 
 
 // Show the expanded img modal and insert the clicked img.
@@ -26,7 +71,6 @@ document.addEventListener('keydown', (event) => {
 
 
 
-
 // Page Tabs changing function
 function openPage(evt, pgName) {
     var i, tabcontent, tablinks;
@@ -44,83 +88,6 @@ function openPage(evt, pgName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-
-
-// Needl Work Pg Tabs changing function
-function openNeedle(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("needleTabContent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("needleTabLinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpenNeedle").click();
-
-
-
-
-// Auction Pg Tabs changing function
-function openAuction(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("auctionTabContent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("auctionTabLinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpenAuction").click();
-
-
-
-
-
-// Auction Catalog preview funcitons.
-  var pages = document.getElementsByClassName('page');
-  for(var i = 0; i < pages.length; i++)
-    {
-      var page = pages[i];
-      if (i % 2 === 0)
-        {
-          page.style.zIndex = (pages.length - i);
-        }
-    }
-
-  document.addEventListener('DOMContentLoaded', function(){
-    for(var i = 0; i < pages.length; i++)
-      {
-        //Or var page = pages[i];
-        pages[i].pageNum = i + 1;
-        pages[i].onclick=function()
-          {
-            if (this.pageNum % 2 === 0)
-              {
-                this.classList.remove('flipped');
-                this.previousElementSibling.classList.remove('flipped');
-              }
-            else
-              {
-                this.classList.add('flipped');
-                this.nextElementSibling.classList.add('flipped');
-              }
-           }
-        }
-  })
-
 
 
 

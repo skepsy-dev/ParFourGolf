@@ -229,45 +229,13 @@
                     the West Coast’s emerging indoor golf market.
                 </p>
             <br>
-
             </div>
             <!-- Investor File Download Button -->
             <div> 
                 <body>
-                    <button onclick="requestFileDownload()">Download Investor Deck</button>
+                    <button onclick="downloadInvestorDeck()">Download Investor Deck</button>
                 </body>
-                <script>
-                    async function requestFileDownload() {
-                        const password = prompt("Enter password to download file:");
-            
-                        if (!password) return; // If the user cancels
-            
-                        // Send password to the server for validation
-                        const response = await fetch('/download-file', {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ password })
-                        });
-            
-                        if (response.status === 200) {
-                            // Create a hidden link to trigger download
-                            const blob = await response.blob();
-                            const url = window.URL.createObjectURL(blob);
-                            const a = document.createElement("a");
-                            a.href = url;
-                            a.download = "250205_InvestorDeck_Par4.pdf"; // Set correct filename
-                            document.body.appendChild(a);
-                            a.click();
-                            document.body.removeChild(a);
-                            window.URL.revokeObjectURL(url);
-                        } else {
-                            alert("Incorrect password. Access denied!");
-                        }
-                    }
-                </script>
             </div>
-
-
         </div>
     </div> 
 
@@ -289,45 +257,18 @@
                 <fieldset class="contactForm">
                     <legend><span style="font-family: tabFont;">Contact</span></legend>
                     <form id="contactForm" method="POST">
-
                         <input class="contactInput" type="text" name="userName" required id="userName" placeholder="Your Name...">
-                        
                         <input class="contactInput" type="email" name="userEmail" required id="userEmail" placeholder="Your Email Address...">
-                        
                         <select class="contactSelect" name="regarding" id="regarding">
                             <option value="" selected hidden>Regarding?</option>
                             <option value="investing">Investing</option>
                             <option value="partnerships">Partnerships</option>
                             <option value="marketing">Marketing</option>
                         </select>
-                        
-                        <textarea class="contactInput" name="userMessage" required id="userMessage" rows="3" cols="20"
-                            placeholder="Note to Par 4..."></textarea>
-                        
+                        <textarea class="contactInput" name="userMessage" required id="userMessage" rows="3" cols="20" placeholder="Note to Par 4..."></textarea>
                         <button class="contactButton" type="submit">Submit</button>
-                        
-                        <script>
-                            document.getElementById("contactForm").addEventListener("submit", async function(event) {
-                                event.preventDefault();
-                    
-                                const formData = {
-                                    userName: document.getElementById("userName").value,
-                                    userEmail: document.getElementById("userEmail").value,
-                                    regarding: document.getElementById("regarding").value,
-                                    userMessage: document.getElementById("userMessage").value
-                                };
-
-                                const response = await fetch("/send-email", {
-                                    method: "POST",
-                                    body: JSON.stringify(formData),
-                                    headers: { "Content-Type": "application/json" }
-                                });
-                    
-                                const result = await response.json();
-                                alert(result.message);
-                            });
-                        </script>
                     </form>
+                    <p id="successMessage" style="display: none; color: green;">Message sent successfully!</p>
                 </fieldset>
             </div>
             <!-- <br><br><br>
