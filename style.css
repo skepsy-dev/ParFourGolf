@@ -477,6 +477,13 @@ img:hover {
      .footer {
         font-size: 5px;
      }
+
+     .navLogo {
+        width: auto;
+        height: 50px;
+        margin-top: 1%;
+        /* margin-left: 0%; */
+    }
  }
 
 
@@ -509,6 +516,13 @@ img:hover {
         max-width: 200px;
         padding-bottom: 20%;
      }
+
+     .navLogo {
+        width: auto;
+        height: 50px;
+        margin-top: 1%;
+        /* margin-left: 0%; */
+    }   
  }
 
 
@@ -519,6 +533,13 @@ img:hover {
 
     .contactForm {
         margin-left: 0;
+    }
+
+    .navLogo {
+        width: auto;
+        height: 50px;
+        margin-top: 1%;
+        /* margin-left: 0%; */
     }
 }
 
