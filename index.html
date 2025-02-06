@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par 4 Golf Lounge</title>
+    <link rel="icon" type="image/icon type" href="images/logos/Logo_Par4_pfp.jpeg">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a><img class="navLogo" src="images/logos/Logo_Golfer4.png" alt="Par 4 Logo"></a>
+
+        <!-- <div class="navbar-links">
+            <a href="https://www.instagram.com/mary_schepisi/" target="_blank"><img class="instaLogo"
+                    src="images/logos/insta_logo.png" alt="Instagram Logo"></a>
+            <a href="https://www.newdirectionsartauction.com/" target="_blank"><img class="msLogo"
+                    src="images/logos/ndArt_logo.png" alt="Auction Logo"></a>
+        </div> -->
+    </nav>
+    <br>
+
+
+    <div class="pageTab">
+        <button class="pageLinks" onclick="openPage(event, 'aboutPg')" id="defaultOpen">Home</button>
+        <button class="pageLinks" onclick="openPage(event, 'newWorkPg')">About</button>
+        <button class="pageLinks" onclick="openPage(event, 'exhibitsPg')">Reference</button>
+        <button class="pageLinks" onclick="openPage(event, 'investPg')">Invest</button>
+        <button class="pageLinks" onclick="openPage(event, 'contactPg')">Contact</button>
+    </div>
+
+
+    <!-- Home Tab 1 -->
+    <div id="aboutPg" class="pageContent">
+        <div class="aboutContent">
+            <!-- <p><span class="titleSpan">Mary Schepisi</span> is fascinated with nature in all its forms while influenced by concerns for the
+                environment, the female body and a dream of human rights for all.
+                <br><br>
+                <span style="font-family: tabFont;">Mary</span> has showcased exhibitions in Melbourne, New York City,
+                    Los Angeles and London. Her work is held in numerous collections.
+                <br><br>
+                <span style="font-family: tabFont;">Recently</span> creating a marvellous range of homewares, using her painting and 
+                    needleworks to enrich exclusive textiles. Found on
+                <a class="aboutPlink" href="https://www.maryschepisidesigns.com/" target="_blank">maryschepisidesigns.com</a>
+                <br><br>
+                <span style="font-family: tabFont;">Mary</span> has numerous parts to her creativity including the female body and human rights
+            </p> -->
+            <img class="aboutImg" src="images/logos/Logo_Par4_white.jpeg" onclick="myFunction(this);">
+        </div>
+    </div>
+
+    <!-- About Tab 2 -->
+    <div id="newWorkPg" class="pageContent">
+        <div class="aboutCopy">
+            <!-- <p><span class="titleSpan">As in life,</span> there is no mandatory path through her landscape, no one route of discovery. 
+                Given the difficulty of grasping the vastness and variety of place, both metaphorically and actually, one could 
+                forget certain presuppositions and embrace Mary’s visualisation.
+            </p> -->
+            <p class="aboutP"><span style="font-family: tabFont;">Los Angeles Golfers</span> face a unique challenge with limited time and scarce access to quality courses. 
+                with few public golf options and high demand for tee times, booking a round can be frustrating and time consuming.
+                <br><br>
+                <span style="font-family: tabFont;">Par 4</span> offers a convenient, high-tech alternative, allowing golfers to practice, play, and improve their game on-demand without the hassle of securing a tee time or committing to hours on the course.
+                <br><br>
+                <span style="font-family: tabFont;">Indoor golf </span> simulator market 
+                is experiencing rapid growth, valued at nearly $1.5 billion in 2022 and projected to nearly double by 2030. with a rising demand for year-round golfing experiences, particularly among a new generation of players, establishing a golf simulator facility presents a prime opportunity to tap into this expanding market and build a loyal customer base for long-term success.
+                <!-- <br><br>  -->
+            </p>
+        </div>
+        <!-- <div class="newWorkContent"> -->
+            <!-- Needle Work Photo Grid -->
+            <!-- <div class="row">
+                <div class="column">
+                    <div class="column-img">
+                        <img src="images/new_work/newWork1.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork10.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork3.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork5.png" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-img">
+                        <img src="images/new_work/newWork15.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork17.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork6.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork4.png" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-img">
+                        <img src="images/new_work/newWork2.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork8.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork9.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork11.png" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-img">
+                        <img src="images/new_work/newWork16.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork7.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork12.png" onclick="myFunction(this);">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-img">
+                        <img src="images/new_work/newWork13.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork14.png" onclick="myFunction(this);">
+                    </div>
+                    <div class="column-img">
+                        <img src="images/new_work/newWork18.png" onclick="myFunction(this);">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- Reference Images  Tab 3 -->
+    <div id="exhibitsPg" class="pageContent">
+<!-- 
+        <div class="exhibitHeader">
+            <div>
+                <h3><span class="titleSpan">'Summer Abandon'</span></h3>
+                <p>
+                    Recent Works by Mary & Fred Schepisi<br>
+                    15/04 thru 11/05/23<br><br>
+                    <span style="font-family: tabFont;">Opening with Mary & Fred - 15/04/23 3:00pm - 5:00pm</span><br>
+                    cbOne Gallery - 1c Marine Pde Abbotsford, VIC 3067
+                </p>
+            </div>
+        </div>
+
+        <div class="exhibitCopyDiv">
+            <p><span style="font-family: tabFont;">Two Bays Vineyard</span> is the inspiration for Mary Schepisi’s new exhibition.
+                Exploring the rich undulating topography of her environment through needlework and painting Mary has
+                discovered an entirely different pictorial dimension.
+                <br><br>
+                <span style="font-family: tabFont;">Fragmented</span> stitched lines delineate the lakes and vineyards of her landscape, a world always in seasonal increase
+                and tranquillity.
+                <br><br>
+                <span style="font-family: tabFont;">Mary</span> has created a vocabulary that is both delicate, textual and unique. Her singular visualisation creates a
+                dialogue between needle and paint with new layers of meaning as the views emerge.
+            </p>
+        </div> -->
+        <!-- Exhibitions Photo Grid -->
+        <div class="row refImagesDiv">
+            <div class="column">
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef01.png" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef11.jpg" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef03.webp" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef04.png" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef06.jpg" onclick="myFunction(this);">
+                </div>
+            </div>
+            <div class="column">
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef05.png" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef07.jpg" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef08.jpg" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef09.webp" onclick="myFunction(this);">
+                </div>
+                <div class="column-img">
+                    <img src="images/Sim Referrences/SimRef10.webp" onclick="myFunction(this);">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+   <!-- Invest Tab 4 -->
+   <div id="investPg" class="pageContent">
+
+        <div class="investContent">
+            <div>
+                <p class="aboutP"><span style="font-family: tabFont;">Par 4</span> 
+                    is launching a seed round to open its first premier indoor golf facility in Los Angeles, addressing the 
+                    city’s growing demand for accessible golf experiences. Par 4 offers a modern, on-demand alternative, 
+                    combining state-of-the-art simulators, performance tracking, and a social lounge environment. This funding 
+                    round will support construction, technology, and brand expansion, laying the foundation for future growth in 
+                    the West Coast’s emerging indoor golf market.
+                </p>
+            <br>
+
+            </div>
+            <!-- Investor File Download Button -->
+            <div> 
+                <body>
+                    <button onclick="requestFileDownload()">Download Investor Deck</button>
+                </body>
+                <script>
+                    async function requestFileDownload() {
+                        const password = prompt("Enter password to download file:");
+            
+                        if (!password) return; // If the user cancels
+            
+                        // Send password to the server for validation
+                        const response = await fetch('/download-file', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ password })
+                        });
+            
+                        if (response.status === 200) {
+                            // Create a hidden link to trigger download
+                            const blob = await response.blob();
+                            const url = window.URL.createObjectURL(blob);
+                            const a = document.createElement("a");
+                            a.href = url;
+                            a.download = "250205_InvestorDeck_Par4.pdf"; // Set correct filename
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                            window.URL.revokeObjectURL(url);
+                        } else {
+                            alert("Incorrect password. Access denied!");
+                        }
+                    }
+                </script>
+            </div>
+
+
+        </div>
+    </div> 
+
+
+
+
+
+
+
+
+    <!-- Contact Tab 5 -->
+    <div id="contactPg" class="pageContent">
+
+        <div class="contactContent">
+            <div class="contactFormDiv">
+                <p><span style="font-family: tabFont;">Looking forward to hearing from you.</span><br><br>
+                    for all inquiries,<br> please connect via the form below.
+                </p>
+                <fieldset class="contactForm">
+                    <legend><span style="font-family: tabFont;">Contact</span></legend>
+                    <form id="contactForm" method="POST">
+
+                        <input class="contactInput" type="text" name="userName" required id="userName" placeholder="Your Name...">
+                        
+                        <input class="contactInput" type="email" name="userEmail" required id="userEmail" placeholder="Your Email Address...">
+                        
+                        <select class="contactSelect" name="regarding" id="regarding">
+                            <option value="" selected hidden>Regarding?</option>
+                            <option value="investing">Investing</option>
+                            <option value="partnerships">Partnerships</option>
+                            <option value="marketing">Marketing</option>
+                        </select>
+                        
+                        <textarea class="contactInput" name="userMessage" required id="userMessage" rows="3" cols="20"
+                            placeholder="Note to Par 4..."></textarea>
+                        
+                        <button class="contactButton" type="submit">Submit</button>
+                        
+                        <script>
+                            document.getElementById("contactForm").addEventListener("submit", async function(event) {
+                                event.preventDefault();
+                    
+                                const formData = {
+                                    userName: document.getElementById("userName").value,
+                                    userEmail: document.getElementById("userEmail").value,
+                                    regarding: document.getElementById("regarding").value,
+                                    userMessage: document.getElementById("userMessage").value
+                                };
+
+                                const response = await fetch("/send-email", {
+                                    method: "POST",
+                                    body: JSON.stringify(formData),
+                                    headers: { "Content-Type": "application/json" }
+                                });
+                    
+                                const result = await response.json();
+                                alert(result.message);
+                            });
+                        </script>
+                    </form>
+                </fieldset>
+            </div>
+            <!-- <br><br><br>
+            <div class="contactPgLinks">
+                <div>
+                    <p><span style="font-family: tabFont;">New Directions Auction:</span></p>
+                    <a href="https://www.instagram.com/maryschepisiart/" target="_blank"><img class="contactSocials"
+                            src="images/logos/ndArt_logo.png" alt="Instagram"></a>
+                </div>
+                <div>
+                    <p><span style="font-family: tabFont;">Social Media:</span></p>
+                    <a href="https://www.instagram.com/maryschepisiart/" target="_blank"><img class="contactSocials"
+                            src="images/logos/insta_logo.png" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/maryschepisiart/" target="_blank"><img class="contactSocials"
+                            src="images/logos/fb_logo.png" alt="Facebook"></a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- IMG Modal -->
+    <div class="img-bg-modal" id="img-bg-modal">
+        <div class="img-modal">
+            <img class="expandedImg" id="expandedImg">
+        </div>
+        <div class="imgModal-close">+</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
