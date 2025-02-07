@@ -47,11 +47,18 @@ function downloadInvestorDeck() {
 }
 
 
+
+
+
+
 // Show the expanded img modal and insert the clicked img.
 function myFunction(imgs) {
         var expandImg = document.getElementById("expandedImg");
-        // var imgText = document.getElementById("imgtext");
+        var modal = document.getElementById("img-bg-modal");
+
         expandImg.src = imgs.src;
+        modal.style.display = "flex"; // Using flex to center in viewport
+
         // imgText.innerHTML = imgs.alt;
         document.getElementById("img-bg-modal").style.display = "block";
     }
@@ -67,6 +74,18 @@ document.addEventListener('keydown', (event) => {
     document.querySelector('.img-bg-modal').style.display = "none";
   }
 })
+
+// Close IMG modal when clicking outside the image
+document.getElementById("img-bg-modal").addEventListener("click", function(event) {
+  var expandImg = document.getElementById("expandedImg");
+  if (!expandImg.contains(event.target)) {
+      document.getElementById("img-bg-modal").style.display = "none";
+  }
+});
+
+
+
+
 
 
 
