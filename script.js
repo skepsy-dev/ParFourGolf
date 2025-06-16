@@ -40,7 +40,7 @@ function downloadInvestorDeck() {
     const password = prompt("Enter password to download the file:");
     
     if (password === "16118") { // Change this password as needed
-      window.open("files/250317- Investor Deck- Par 4.pdf"); // Open file path in new tab
+      window.open("files/250616- Investor Deck- Par 4.pdf"); // Open file path in new tab
     } else {
         alert("Incorrect password. Access denied!");
     }
