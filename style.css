@@ -45,7 +45,7 @@
  .aboutImg {
      max-width: 600px;
      /* height: 100%; */
-     padding-bottom: 200px;
+     /* padding-bottom: 200px; */
      /* padding-right: 10%; */
  }
 
@@ -71,7 +71,18 @@
     max-width: 500px;
  }
 
+/* Promo page */    
+.promoVideoDiv {
+    margin-top: 10%;
+    margin-left: 5%;
+}
 
+.promoVideo {
+    max-height: 300px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
 /* Reference image page */
 .refImagesDiv {
@@ -199,7 +210,7 @@
  /* Style the tab content */
  .pageContent {
      float: left;
-     padding: 0px 5%;
+     /* padding: 0px 5%; */
      border: none;
      width: 70%;
      height: auto;
@@ -234,9 +245,9 @@
 
 .navLogo {
     width: auto;
-    height: 100px;
+    height: 50px;
     margin-top: 7px;
-    /* margin-left: 0%; */
+    margin-left: 3%;
 }
 
 .instaLogo {
@@ -455,6 +466,10 @@ img:hover {
      .aboutContent {
          display: block;
      }
+     
+     .promoVideo {
+        max-height: 200px;
+    }
 
      /* IMG Grid */
      .column {
@@ -511,6 +526,10 @@ img:hover {
          font-size: 15px;
      }
 
+     .promoVideo {
+        max-height: 150px;
+    }
+
      /* home page logo */
      .aboutImg {
         max-width: 200px;
@@ -533,6 +552,10 @@ img:hover {
 
     .contactForm {
         margin-left: 0;
+    }
+
+    .promoVideo {
+        max-height: 100px;
     }
 
     .navLogo {
