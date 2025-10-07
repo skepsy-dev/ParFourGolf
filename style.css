@@ -245,8 +245,8 @@
 
 .navLogo {
     width: auto;
-    height: 50px;
-    margin-top: 7px;
+    height: 40px;
+    margin-top: 2%;
     margin-left: 3%;
 }
 
@@ -396,6 +396,11 @@ img:hover {
  /* Responsive layout - makes a two column-layout instead of five columns */
  @media screen and (max-width: 800px) {
 
+    .navLogo {
+        height: 35px;
+        margin-left: 1%;
+    }
+
      .auction2023 {
          display: block;
      }
@@ -494,10 +499,7 @@ img:hover {
      }
 
      .navLogo {
-        width: auto;
-        height: 50px;
-        margin-top: 1%;
-        /* margin-left: 0%; */
+        height: 35px;
     }
  }
 
@@ -537,11 +539,9 @@ img:hover {
      }
 
      .navLogo {
-        width: auto;
-        height: 50px;
-        margin-top: 1%;
-        /* margin-left: 0%; */
-    }   
+        height: 25px;
+        margin-left: 1%;
+    }  
  }
 
 
@@ -555,14 +555,12 @@ img:hover {
     }
 
     .promoVideo {
-        max-height: 100px;
+        max-height: 130px;
     }
 
     .navLogo {
-        width: auto;
-        height: 50px;
-        margin-top: 1%;
-        /* margin-left: 0%; */
+        height: 25px;
+        margin-left: 0%;
     }
 }
 
